@@ -1,0 +1,19 @@
+server:
+  port: 8086
+spring:
+  application:
+    name: sms-service
+  rabbitmq:
+    host: 192.168.43.185
+    username: leyou
+    password: leyou
+    virtual-host: /leyou
+  redis:
+    host: 192.168.43.185
+#阿里短信配置
+leyou:
+  sms:
+    accessKeyId: LTAI5tN3AQk8JUHR7KSakiQb # 你自己的accessKeyId
+    accessKeySecret: 2xd2dissolsSW3l90enn77wuxKrged # 你自己的AccessKeySecret
+    signName: 阿里云短信测试 # 签名名称
+    verifyCodeTemplate: SMS_154950909 # 模板名称
